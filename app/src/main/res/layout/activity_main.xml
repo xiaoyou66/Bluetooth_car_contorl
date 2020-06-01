@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../css/buttons.css"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btn_up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_btn1"
+                android:layout_marginBottom="30dp" />
+            <ImageButton
+                android:id="@+id/btn_down"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_btn2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btn_left"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_btn3"
+                android:layout_marginRight="30dp"/>
+            <ImageButton
+                android:id="@+id/btn_right"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_btn4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/btn_bluetooth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bluetooth"
+            android:layout_marginLeft="20dp"/>
+        <ImageButton
+            android:id="@+id/btn_set"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_set"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙模块信息"
+            android:textSize="25sp"
+            android:textColor="@color/rightblue"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
